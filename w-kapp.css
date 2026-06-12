@@ -1,0 +1,104 @@
+h1{
+    position: relative;
+    z-index: 1;
+    font-size: 4.0em;
+    line-height: 300px;
+    color: brown;
+    text-align: center;
+}
+
+.w-kapp_title h1{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flags {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+    animation-delay: 1.5s;
+    overflow: hidden;
+}
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.top-flag-slide img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+.bottom-flag-slide img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+.top-flag-slide {
+    animation: top-scrollFlags 80s linear infinite;
+    display: flex;
+}
+.bottom-flag-slide {
+    animation: bottom-scrollFlags 80s linear infinite;
+    display: flex;
+}
+@keyframes top-scrollFlags {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-800%);
+    }
+}
+@keyframes bottom-scrollFlags {
+    from {
+        transform: translateX(-800%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+h2{
+    font-size: 1.5em;
+}
+
+.groups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.group{
+    width: calc(20%);
+    text-align: center;
+}
+
+.group ul{
+    list-style: none;
+    padding: 0;
+}
+
+.featured-players {
+    background-color: navy;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
