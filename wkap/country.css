@@ -1,0 +1,292 @@
+h1{  /*国名のタイトル*/
+    color: black;
+}
+
+h2{ 
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.field{
+    height: auto;
+    width: 600px;
+    position: relative; /*absoluteの原点(基準)になる*/
+}
+
+.field_img{
+    display: block;
+}
+
+.goal{
+    width: 500px;
+    position: relative;
+}
+
+.goal_img{
+    display: block;
+    width: 100%;
+}
+
+.marker {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* 中心基準にする */
+}
+
+.ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    display: none;
+}
+
+
+
+
+
+/*ヘッダー*/
+.country_header{
+    display: flex; /*要素を横並びに(国名と国画像)*/
+    align-items: center; /*縦方向を中央揃え(画像の縦方向を収縮)*/
+    gap: 18px; /*要素間の間隔*/
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 22px;
+
+    background: navy;
+
+    z-index: 1000;
+}
+
+
+/*country_header内のh1だけに効く*/
+.country_header h1{ /*ヘッダー内のタイトルの見た目調整*/
+    margin: 0; /*デフォルト余白を消す*/
+    color: white;
+    font-size: 32px; /*文字サイズ*/
+    font-weight: 700; /*太字*/
+    letter-spacing: 2px; /*文字間を広げる*/
+}
+
+.country_text h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #cfd8dc;
+    letter-spacing: 2px;
+}
+
+.country_text{
+    flex-direction: column;
+    display: flex;
+}
+
+.flag{
+    width: 80px; /*国画像の大きさ*/
+    vertical-align: middle;
+}
+
+body{
+    padding-top: 220px;
+    left: 0;    
+}
+
+
+/*ボタン関係*/
+.button-area{
+    display: flex; /*柔軟に要素を並べる*/
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.tab-button{
+    flex: 1; /*幅を均等に広げる*/
+    padding: 40px ; 
+    font-size: 40px;
+    border: 2px solid black;
+    cursor: pointer; /*マウスを指アイコンにする*/
+    background-color: gray;
+    color: black;
+    transition: 0.3s;
+}
+
+.tab-button:hover{
+    background-color: #003f88;
+}
+
+.pattern-button{
+    flex: 1;
+    padding: 30px ;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 20%;
+
+    font-size: 40px;
+
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.pattern-button:hover{
+    background-color: lightcyan;
+}
+
+.attack-button{
+    padding: 20px ;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 20%;
+
+    font-size: 20px;
+
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.attack-button.active{
+    background-color: gray;
+    color: white;
+}
+
+.attack-button:hover{
+    background-color: lightcyan;
+}
+
+.main-button-area{
+    display: flex;
+
+    position: fixed;
+
+    top: 120px;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    padding: 10px 0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    background: white;
+}
+
+
+
+/*テーブル関係*/
+.country-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 90px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 900px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;   /* 横スクロール有効 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.country-table th,
+.country-table td{
+    padding: 14px 12px; 
+    text-align: center;
+    border-bottom: 3px solid gray;
+    white-space: nowrap;
+}
+
+.country-table th{
+    background: navy;
+    color: white;
+    font-weight: bold;
+}
+
+.top-match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+
+    padding: 15px;
+    margin: 10px 0;
+    margin-top: 100px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.time {
+    font-weight: bold;
+    color: #666;
+    gap:2px;
+}
+
+.teams {
+    font-size: 30px;
+    font-weight: bold;
+    gap:2px;
+}
+.vs {
+
+    font-weight: bold;
+
+    margin: 0 5px;
+
+}
+
+
+/*JS関係*/
+.content{
+    display: none; /*普通は非表示*/
+    
+}
+
+.content.active{
+    display: block; /*active付きが表示*/
+}
+
+.pattern_content{
+    display: none;
+}
+
+.pattern_content.active{
+    display: block;
+}
+
+.attack_content{
+    display: none;
+}
+
+.attack_content.active{
+    display: block;
+}
+
+
+

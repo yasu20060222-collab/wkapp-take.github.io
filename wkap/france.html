@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./country.css">
+    </head>
+    <body>
+        <div class="country_header">
+            <img src="image/france.png" class="flag"> <!--画像だけに反応-->
+            <div class="country_text">
+                <h1>フランス</h1>
+                <h2>ranking #1</h2>
+            </div>
+        </div>
+        <div class="main-button-area">
+            <button class="tab-button" onclick="showMain('member')">
+                メンバー
+            </button>
+            <button class="tab-button" onclick="showMain('schedule')">
+                試合スケジュール
+            </button>
+            
+        </div>
+         <div class="content active" id="member">
+            <table class="country-table">
+                <tr>
+                    <th>背番号</th>
+                    <th>選手</th>
+                    <th>ポジション</th>
+                    <th>所属</th>
+                    <th>リーグ</th>
+                </tr>
+
+                <!-- GK -->
+                <tr>
+                    <td>16</td>
+                    <td>マイク・メニャン</td>
+                    <td>GK</td>
+                    <td>ミラン</td>
+                    <td>セリエA</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ブライス・サンバ</td>
+                    <td>GK</td>
+                    <td>レンヌ</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>ロビン・リッサー</td>
+                    <td>GK</td>
+                    <td>RCランス</td>
+                    <td>リーグアン</td>
+                </tr>
+
+                <!-- DF -->
+                <tr>
+                    <td>21</td>
+                    <td>リュカ・エルナンデス</td>
+                    <td>DF</td>
+                    <td>パリSG</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>テオ・エルナンデス</td>
+                    <td>DF</td>
+                    <td>アル・ヒラル</td>
+                    <td>サウジ・プロリーグ</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ダヨ・ウパメカノ</td>
+                    <td>DF</td>
+                    <td>バイエルン</td>
+                    <td>ブンデスリーガ</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>マクサンス・ラクロワ</td>
+                    <td>DF</td>
+                    <td>クリスタル・パレス</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>マロ・ギュスト</td>
+                    <td>DF</td>
+                    <td>チェルシー</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>リュカ・ディニュ</td>
+                    <td>DF</td>
+                    <td>アストン・ビラ</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>イブラヒマ・コナテ</td>
+                    <td>DF</td>
+                    <td>リバプール</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>ウィリアン・サリバ</td>
+                    <td>DF</td>
+                    <td>アーセナル</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ジュール・クンデ</td>
+                    <td>DF</td>
+                    <td>バルセロナ</td>
+                    <td>ラ・リーガ</td>
+                </tr>
+
+                <!-- MF -->
+                <tr>
+                    <td>18</td>
+                    <td>ワレン・ザイール＝エメリ</td>
+                    <td>MF</td>
+                    <td>パリSG</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>エンゴロ・カンテ</td>
+                    <td>MF</td>
+                    <td>フェネルバフチェ</td>
+                    <td>スュペル・リグ</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>アドリアン・ラビオ</td>
+                    <td>MF</td>
+                    <td>ミラン</td>
+                    <td>セリエA</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>マヌ・コネ</td>
+                    <td>MF</td>
+                    <td>ローマ</td>
+                    <td>セリエA</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>オーレリアン・チュアメニ</td>
+                    <td>MF</td>
+                    <td>レアル・マドリード</td>
+                    <td>ラ・リーガ</td>
+                </tr>
+
+                <!-- FW -->
+                <tr>
+                    <td>10</td>
+                    <td>キリアン・エンバペ</td>
+                    <td>FW</td>
+                    <td>レアル・マドリード</td>
+                    <td>ラ・リーガ</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>ラヤン・シェルキ</td>
+                    <td>FW</td>
+                    <td>マンチェスター・シティ</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>ジャン＝フィリップ・マテタ</td>
+                    <td>FW</td>
+                    <td>クリスタル・パレス</td>
+                    <td>プレミアリーグ</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>マイケル・オリーセ</td>
+                    <td>FW</td>
+                    <td>バイエルン</td>
+                    <td>ブンデスリーガ</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>マルクス・テュラム</td>
+                    <td>FW</td>
+                    <td>インテル</td>
+                    <td>セリエA</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ウスマン・デンベレ</td>
+                    <td>FW</td>
+                    <td>パリSG</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>ブラッドリー・バルコラ</td>
+                    <td>FW</td>
+                    <td>パリSG</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>デジレ・ドゥエ</td>
+                    <td>FW</td>
+                    <td>パリSG</td>
+                    <td>リーグアン</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>マグネス・アクリウシュ</td>
+                    <td>FW</td>
+                    <td>モナコ</td>
+                    <td>リーグアン</td>
+                </tr>
+            </table>
+        </div>
+        <div class="content" id="schedule">
+             <div class="top-match">
+                <span class="time">6月17日 4:00</span>
+                <span class="teams">
+                    vs<img src="image/senegal.png" class="flag"><a href="senegal.html">セネガル</a>
+                </span>
+            </div>
+
+            <div class="match">
+                <span class="time">6月23日 6:00</span>
+                <span class="teams">
+                      vs  <img src="image/iraq.png" class="flag"><a href="iraq.html">イラク</a></span>
+            </div>
+             <div class="match">
+                <span class="time">6月27日 4:00</span>
+                <span class="teams">
+                     vs  <img src="image/norway.png" class="flag"><a href="norway.html">ノルウェー</a></span>
+            </div>
+        </div>
+        <div class="content" id="target">
+            <div class="top-box-player">
+                <img src="player/france/olise.png" class="top-player">
+                <div class="info-player">
+                    <h1>ミカエル・オリーセ</h1>
+                    <h2>25-26 ブンデスリーガ 最優秀選手</h2>
+                    <h2>25-26 ブンデスリーガ アシスト王</h2>
+                    <h2>25-26 ブンデスリーガ 得点ランキング同率5位</h2>
+                    <h2>25-26 CL アシスト王</h2>
+                </div>
+            </div>
+            <div class="box-player">
+                <img src="player/france/dembele.png" class="player">
+                <div class="info-player">
+                    <h1>ウスマン・デンベレ</h1>
+                    <h2>24-25 CL 最優秀選手</h2>
+                    <h2>24-25 CL バロンドーラー</h2>
+                    <h2>24-25 リーグアン 得点王</h2>
+                    <h2>24-25 リーグアン POTS</h2>
+                    <h2>24-25 リーグアン ベストイレブン</h2>
+                    <h2>25-26 リーグアン POTS</h2>
+                    <h2>25-26 リーグアン ベストイレブン</h2>
+                </div>
+            </div> 
+            <div class="box-player">
+                <img src="player/france/mbappe.png" class="player">
+                <div class="info-player">
+                    <h1>キリアン・エンバペ</h1>
+                    <h2>25-26 CL 得点王</h2>
+                    <h2>25-26 ラリーガ 得点王</h2>
+                    <h2>24-25 ラリーガ 得点王</h2>
+                </div>
+            </div> 
+             <div class="box-player">
+                <img src="player/france/doue.png" class="player">
+                <div class="info-player">
+                    <h1>デジレ・ドゥエ</h1>
+                    <h2>25-26 リーグアン 若手最優秀選手</h2>
+                    <h2>24-25 リーグアン 若手最優秀選手</h2>
+                </div>
+            </div> 
+            <div class="box-player">
+                <img src="player/france/barcola.png" class="player">
+                <div class="info-player">
+                    <h1>ブラッドリー・バルコラ</h1>
+                    <h2>24-25 リーグアン ベストイレブン</h2>
+                    <h2>24-25 リーグアン アシスト王同率</h2>
+                </div>
+            </div> 
+             <div class="box-player">
+                <img src="player/france/cherki.png" class="player">
+                <div class="info-player">
+                    <h1>ラヤン・シェルキ</h1>
+                    <h2>25-26 プレミアリーグ アシストランキング2位</h2>
+                    <h2>25-26 プレミアリーグ 最優秀若手選手ノミネート</h2>
+                    <h2>24-25 リーグアン アシスト王</h2>
+                </div>
+            </div>   
+            <div class="box-player">
+                <img src="player/france/zaire-emery.png" class="player">
+                <div class="info-player">
+                    <h1>ウォーレン・ザイール・エメリ</h1>
+                    <h2>25-26 リーグアン 若手最優秀選手ノミネート</h2>
+                </div>
+            </div> 
+            <div class="box-player">
+                <img src="player/france/saliba.png" class="player">
+                <div class="info-player">
+                    <h1>ウィリアム・サリバ</h1>
+                    <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン(3年連続)</h2>
+                    <h2>24-25 PFAベストイレブン</h2>
+                    <h2>24-25 プレミアリーグ 最優秀若手選手ノミネート</h2>
+                </div>
+            </div>    
+        </div>
+    </body>
+    <script>
+         function showMain(id){
+                const contents = document.querySelectorAll(".content");
+                contents.forEach(content => {
+                    content.classList.remove("active");
+                });
+                document.getElementById(id).classList.add("active");
+            }
+    </script>
+</html>
