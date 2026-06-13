@@ -106,8 +106,8 @@ h2{
 
 @media (max-width: 768px){
     h1{
-        font-size: 2em;
-        line-height: 120px;
+        font-size: 2.5em;
+        line-height: 100px;
     }
     .group{
         width: 45%;
