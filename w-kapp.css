@@ -23,19 +23,16 @@ h1{
     }
 }
 
-/*.flags {
+.flags {
     opacity: 0;
     
     transform: translateX(-100%);
     animation: slideIn 2s forwards;
     animation-delay: 1.5s;
     overflow: hidden;
-}*/
-
-.flags{
-    overflow: hidden;
-    width: 100%;
 }
+
+
 
 @keyframes slideIn {
     to {
