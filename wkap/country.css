@@ -5,6 +5,10 @@ h1{  /*国名のタイトル*/
 h2{ 
     font-size: 20%;
 }
+h3 {
+    font-size: 25px;
+    border-left: 4px solid lightslategray;
+}
 
 /*ヘッダー*/
 .country_header{
@@ -268,20 +272,160 @@ body{
         padding: 12px;
         margin: 10px;
     }
-    .formation{
-        width: 100%;
-        margin-left: 0;
-    }
-    .field{
-        width: 100%;
-    }
-    .player{
-        width: 35px;
-        height: 50px;
-        font-size: 12px;
-    }
-    .gk{
-        left: 50%;
-    }
+    
+    .result-tytle{
+    background-color: #003f88;
+    margin-top: 80px;
+
+}
+
+.result-tytle h1{
+    color: white
+}
+
+.formation{
+    position: relative;
+    width: 90%;
+    margin-left: 90px;
+}
+
+.field {
+    display: block;
+    width: 90%;
+    
+}
+
+.player{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 中央揃え */
+    text-align: center;
+}
+
+.number{
+    font-size: 30px;
+    line-height: 1;
+}
+
+.name{
+    font-size: 20px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.GK{
+    bottom: 10%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.LB-4 {
+    bottom: 30%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.CB-4-1 {
+    bottom: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.CB-4-2 {
+    bottom: 20%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.CB-5-3 {
+    bottom: 20%;
+    left: 45%;
+    transform: translateX(-50%);
+
+}
+.RB-4 {
+    bottom: 30%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+.DMF-1 {
+    bottom: 40%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.CMF-3-1 {
+    bottom: 50%;
+    left: 25%;
+    transform: translateX(-50%); 
+}
+
+.CMF-3-2 {
+    bottom: 50%;
+    left: 45%;
+    transform: translateX(-50%); 
+}
+
+.CMF-3-3 {
+    bottom: 50%;
+    left: 65%;
+    transform: translateX(-50%); 
+}
+.AMF-2-1 {
+    bottom: 55%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.AMF-2-2 {
+    bottom: 55%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.LW {
+    bottom: 70%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+.RW {
+    bottom: 70%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+.ST-1{
+    bottom: 80%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.ST-2-1 {
+    bottom: 80%;
+    left: 35%;
+    transform: translateX(-50%); 
+}
+
+.ST-2-2 {
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.score-tytle{
+    background-color: lightslategray;
+
+}
+
+.score-tytle h1{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.score-card {
+    background-color: lightgoldenrodyellow;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
 }
 
