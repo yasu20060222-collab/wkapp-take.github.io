@@ -288,5 +288,45 @@ body{
     display: block;
 }
 
-
+@media (max-width: 768px){
+    body{
+        padding-top: 150px;
+    }
+    .country_header{
+        padding: 15px 10px;
+    }
+    .country_header h1{
+        font-size: 22px;
+    }
+    .flag{
+        width: 50px;
+    }
+    .main-button-area{
+        top: 80px;
+    }
+    .tab-button{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .pattern-button{
+        font-size: 18px;
+        padding: 12px;
+        margin: 10px;
+    }
+    .formation{
+        width: 100%;
+        margin-left: 0;
+    }
+    .field{
+        width: 100%;
+    }
+    .player{
+        width: 35px;
+        height: 50px;
+        font-size: 12px;
+    }
+    .gk{
+        left: 50%;
+    }
+}
 
