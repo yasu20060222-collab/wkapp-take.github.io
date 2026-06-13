@@ -5,6 +5,7 @@ h1{  /*国名のタイトル*/
 h2{ 
     font-size: 20%;
 }
+
 h3 {
     font-size: 25px;
     border-left: 4px solid lightslategray;
@@ -42,7 +43,7 @@ h3 {
     margin: 0;
     font-size: 16px;
     color: #cfd8dc;
-    letter-spacing: 2px;
+    letter-spacing: 5%;
 }
 
 .country_text{
@@ -51,7 +52,7 @@ h3 {
 }
 
 .flag{
-    width: 80px; /*国画像の大きさ*/
+    width: 10%; /*国画像の大きさ*/
     vertical-align: middle;
 }
 
@@ -71,8 +72,8 @@ body{
 
 .tab-button{
     flex: 1; /*幅を均等に広げる*/
-    padding: 40px ; 
-    font-size: 40px;
+    padding: 20px ; 
+    font-size: 38px;
     border: 2px solid black;
     cursor: pointer; /*マウスを指アイコンにする*/
     background-color: gray;
@@ -101,27 +102,6 @@ body{
     background-color: lightcyan;
 }
 
-.attack-button{
-    padding: 20px ;
-    margin: 30px 20px;
-    border: 2px solid black;
-    border-radius: 20%;
-
-    font-size: 20px;
-
-    cursor: pointer;
-    background-color: darkgray;
-}
-
-.attack-button.active{
-    background-color: gray;
-    color: white;
-}
-
-.attack-button:hover{
-    background-color: lightcyan;
-}
-
 .main-button-area{
     display: flex;
 
@@ -137,7 +117,6 @@ body{
     padding: 10px 0;
 
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    background: white;
 }
 
 
@@ -175,6 +154,8 @@ body{
     font-weight: bold;
 }
 
+
+/*日程*/
 .top-match {
     display: flex;
     justify-content: space-between;
@@ -212,69 +193,9 @@ body{
     font-weight: bold;
     gap:2px;
 }
-.vs {
-
-    font-weight: bold;
-
-    margin: 0 5px;
-
-}
 
 
-/*JS関係*/
-.content{
-    display: none; /*普通は非表示*/
-    
-}
-
-.content.active{
-    display: block; /*active付きが表示*/
-}
-
-.pattern_content{
-    display: none;
-}
-
-.pattern_content.active{
-    display: block;
-}
-
-.attack_content{
-    display: none;
-}
-
-.attack_content.active{
-    display: block;
-}
-
-@media (max-width: 768px){
-    body{
-        padding-top: 150px;
-    }
-    .country_header{
-        padding: 15px 10px;
-    }
-    .country_header h1{
-        font-size: 22px;
-    }
-    .flag{
-        width: 50px;
-    }
-    .main-button-area{
-        top: 80px;
-    }
-    .tab-button{
-        font-size: 18px;
-        padding: 10px;
-    }
-    .pattern-button{
-        font-size: 18px;
-        padding: 12px;
-        margin: 10px;
-    }
-}
-    
-    .result-tytle{
+.result-tytle{
     background-color: #003f88;
     margin-top: 80px;
 
@@ -428,3 +349,57 @@ body{
     margin: 20px 0;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*JS関係*/
+.content{
+    display: none; /*普通は非表示*/
+    
+}
+
+.content.active{
+    display: block; /*active付きが表示*/
+}
+
+.pattern_content{
+    display: none;
+}
+
+.pattern_content.active{
+    display: block;
+}
+
+.attack_content{
+    display: none;
+}
+
+.attack_content.active{
+    display: block;
+}
+
+
+
