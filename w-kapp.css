@@ -2,7 +2,7 @@ h1{
     position: relative;
     z-index: 1;
     font-size: 4.0em;
-    line-height: 300px;
+    line-height: 500%;
     color: brown;
     text-align: center;
 }
