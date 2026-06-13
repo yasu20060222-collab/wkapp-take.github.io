@@ -1,122 +1,405 @@
-h1{
-    position: relative;
-    z-index: 1;
-    font-size: 4.0em;
-    line-height: 500%;
-    color: brown;
-    text-align: center;
+h1{  /*国名のタイトル*/
+    color: black;
 }
 
-.w-kapp_title h1{
-    opacity: 0;
-    animation: fadeIn 2s forwards;
+h2{ 
+    font-size: 20%;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+h3 {
+    font-size: 25px;
+    border-left: 4px solid lightslategray;
 }
 
-.flags {
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideIn 2s forwards;
-    animation-delay: 1.5s;
-    overflow: hidden;
-}
-@keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+/*ヘッダー*/
+.country_header{
+    display: flex; /*要素を横並びに(国名と国画像)*/
+    align-items: center; /*縦方向を中央揃え(画像の縦方向を収縮)*/
+    gap: 5%; /*要素間の間隔*/
+    position: fixed;
 
-.top-flag-slide img {
-    width: 20%;
-    height: auto;
-    object-fit: contain;
-}
-.bottom-flag-slide img {
-    width: 20%;
-    height: auto;
-    object-fit: contain;
-}
+    top: 0;
+    left: 0;
 
-.top-flag-slide {
-    animation: top-scrollFlags 80s linear infinite;
-    display: flex;
-}
-.bottom-flag-slide {
-    animation: bottom-scrollFlags 80s linear infinite;
-    display: flex;
-}
-@keyframes top-scrollFlags {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-800%);
-    }
-}
-@keyframes bottom-scrollFlags {
-    from {
-        transform: translateX(-800%);
-    }
-    to {
-        transform: translateX(0%);
-    }
+    width: 100%;
+    padding: 2.7% 2.7%;
+
+    background: navy;
+
+    z-index: 1000;
 }
 
 
-h2{
-    font-size: 1.5em;
-}
-
-.groups{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
-
-.group{
-    width: calc(20%);
-    text-align: center;
-}
-
-.group ul{
-    list-style: none;
-    padding: 0;
-}
-
-.featured-players {
-    background-color: navy;
+/*country_header内のh1だけに効く*/
+.country_header h1{ /*ヘッダー内のタイトルの見た目調整*/
+    margin: 0; /*デフォルト余白を消す*/
     color: white;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-size: 300%; /*文字サイズ*/
+    font-weight: 700; /*太字*/
+    letter-spacing: 2px; /*文字間を広げる*/
+}
+
+.country_text h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #cfd8dc;
+    letter-spacing: 5%;
+}
+
+.country_text{
+    flex-direction: column;
+    display: flex;
+}
+
+.flag{
+    width: 10%; /*国画像の大きさ*/
+    vertical-align: middle;
+}
+
+body{
+    padding-top: 220px;
+    left: 0;    
 }
 
 
-@media (max-width: 768px){
-    h1{
-        font-size: 2.5em;
-        line-height: 100px;
-    }
-    .group{
-        width: 45%;
-    }
-    h2{
-        font-size: 1.2em;
-    }
-    .top-flag-slide img,
-    .bottom-flag-slide img{
-        width: 12%;
-    }
+/*ボタン関係*/
+.button-area{
+    display: flex; /*柔軟に要素を並べる*/
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
 }
+
+.tab-button{
+    flex: 1; /*幅を均等に広げる*/
+    padding: 20px ; 
+    font-size: 38px;
+    border: 2px solid black;
+    cursor: pointer; /*マウスを指アイコンにする*/
+    background-color: gray;
+    color: black;
+    transition: 0.3s;
+}
+
+.tab-button:hover{
+    background-color: #003f88;
+}
+
+.pattern-button{
+    flex: 1;
+    padding: 30px ;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 20%;
+
+    font-size: 40px;
+
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.pattern-button:hover{
+    background-color: lightcyan;
+}
+
+.main-button-area{
+    display: flex;
+
+    position: fixed;
+
+    top: 120px;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    padding: 10px 0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+
+
+/*テーブル関係*/
+.country-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 90px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 900px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;   /* 横スクロール有効 */
+    -webkit-overflow-scrolling: touch;
+}
+
+.country-table th,
+.country-table td{
+    padding: 14px 12px; 
+    text-align: center;
+    border-bottom: 3px solid gray;
+    white-space: nowrap;
+}
+
+.country-table th{
+    background: navy;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*日程*/
+.top-match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+
+    padding: 15px;
+    margin: 10px 0;
+    margin-top: 100px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.time {
+    font-weight: bold;
+    color: #666;
+    gap:2px;
+}
+
+.teams {
+    font-size: 30px;
+    font-weight: bold;
+    gap:2px;
+}
+
+
+.result-tytle{
+    background-color: #003f88;
+    margin-top: 80px;
+
+}
+
+.result-tytle h1{
+    color: white
+}
+
+.formation{
+    position: relative;
+    width: 90%;
+    margin-left: 90px;
+}
+
+.field {
+    display: block;
+    width: 90%;
+    
+}
+
+.player{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 中央揃え */
+    text-align: center;
+}
+
+.number{
+    font-size: 30px;
+    line-height: 1;
+}
+
+.name{
+    font-size: 20px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.GK{
+    bottom: 10%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.LB-4 {
+    bottom: 30%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.CB-4-1 {
+    bottom: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.CB-4-2 {
+    bottom: 20%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.CB-5-3 {
+    bottom: 20%;
+    left: 45%;
+    transform: translateX(-50%);
+
+}
+.RB-4 {
+    bottom: 30%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+.DMF-1 {
+    bottom: 40%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.CMF-3-1 {
+    bottom: 50%;
+    left: 25%;
+    transform: translateX(-50%); 
+}
+
+.CMF-3-2 {
+    bottom: 50%;
+    left: 45%;
+    transform: translateX(-50%); 
+}
+
+.CMF-3-3 {
+    bottom: 50%;
+    left: 65%;
+    transform: translateX(-50%); 
+}
+.AMF-2-1 {
+    bottom: 55%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.AMF-2-2 {
+    bottom: 55%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.LW {
+    bottom: 70%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+.RW {
+    bottom: 70%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+.ST-1{
+    bottom: 80%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.ST-2-1 {
+    bottom: 80%;
+    left: 35%;
+    transform: translateX(-50%); 
+}
+
+.ST-2-2 {
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.score-tytle{
+    background-color: lightslategray;
+
+}
+
+.score-tytle h1{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.score-card {
+    background-color: lightgoldenrodyellow;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*JS関係*/
+.content{
+    display: none; /*普通は非表示*/
+    
+}
+
+.content.active{
+    display: block; /*active付きが表示*/
+}
+
+.pattern_content{
+    display: none;
+}
+
+.pattern_content.active{
+    display: block;
+}
+
+.attack_content{
+    display: none;
+}
+
+.attack_content.active{
+    display: block;
+}
+
+
+
