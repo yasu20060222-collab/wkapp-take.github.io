@@ -19,6 +19,9 @@
             <button class="tab-button" onclick="showMain('schedule')">
                 試合スケジュール
             </button>
+            <button class="tab-button" onclick="showMain('result')">
+                結果
+            </button>
           
         </div>
          <div class="content active" id="member">
@@ -275,7 +278,7 @@
             <div class="top-match">
                 <span class="time">6月15日 4:00</span>
                 <span class="teams">
-                    vs<img src="image/mexico.png" class="flag"><a href="mexico.html">メキシコ</a>
+                   0-2  vs<img src="image/mexico.png" class="flag"><a href="mexico.html">メキシコ</a>
                 </span>
             </div>
 
@@ -290,22 +293,75 @@
                      vs  <img src="image/south-korea.png" class="flag"><a href="korea.html">韓国</a></span>
             </div>
     </div>
-    <div class="content" id="target">
-        <div class="top-box-player">
-            <img src="player/south-africa/appollis.png" class="top-player">
-            <div class="info-player">
-                <h1>オスウィン・アポリス</h1>
-                <h2>25-26 代表最多得点者。</h2>
+    <div class="content" id="result">
+        <div class="result-tytle">
+            <h1>VS南アフリカ</h1>
+        </div>
+        <div class="formation">
+            <img src="image/soccer coat.jpg" class="field">
+
+            <div class="player GK">
+                <div class="number">  1</div>
+                <div class="name">ウィリアムズ</div>
             </div>
-        </div>  
-        <div class="box-player">
-            <img src="player/south-africa/foster.png" class="player">
-            <div class="info-player">
-                <h1>ライル・フォスター</h1>
-                <h2>南アフリカ唯一の欧州5大リーガー。</h2>
-                <h2>市場価値は南アフリカトップ。</h2>
+            <div class="player LB-4">
+                <div class="number">  6</div>
+                <div class="name">モディバ</div>
             </div>
-    </div>
+            <div class="player CB-4-1">
+                <div class="number">  14</div>
+                <div class="name">ムボカジ</div>
+            </div>
+            <div class="player CB-4-2">
+                <div class="number">  21</div>
+                <div class="name">オコン</div>
+            </div>
+            <div class="player CB-5-3">
+                <div class="number">  19</div>
+                <div class="name">シビシ</div>
+            </div>
+
+            <div class="player RB-4">
+                <div class="number">  20</div>
+                <div class="name">ムダウ</div>
+            </div>
+             <div class="player CMF-3-1">
+                <div class="number">  23</div>
+                <div class="name">リラ</div>
+            </div>
+             <div class="player CMF-3-2">
+                <div class="number">  13</div>
+                <div class="name">アダムス</div>
+            </div>
+             <div class="player CMF-3-3">
+                <div class="number">  4</div>
+                <div class="name">モコエナ</div>
+            </div>
+            <div class="player ST-2-2">
+                <div class="number">  15</div>
+                <div class="name">レイナーズ</div>
+            </div>
+            <div class="player ST-2-1">
+                <div class="number">  9</div>
+                <div class="name">フォスター</div>
+            </div>
+        </div>
+        <div class="score-tytle">
+            <h1>交代</h1>
+        </div>
+        <div class="score-card">
+            <h3>56分 フォスター→(5)ムバサ</h3>
+            <h3>61分 アダムス→(11)ズワネ</h3>
+            <h3>76分 レイナーズ→(17)マクゴパ</h3>
+            <h3>76分 モディバ→(7)アポリス</h3>
+        </div>
+        <div class="score-tytle">
+            <h1>レッドカード</h1>
+        </div>
+        <div class="score-card">
+            <h3>(13)スフィフェロ・シトレ</h3>
+            <h3>(11)ゼンバ・ズワネ</h3>
+        </div>
     <script>
          function showMain(id){
                 const contents = document.querySelectorAll(".content");
