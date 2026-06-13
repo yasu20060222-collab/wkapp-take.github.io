@@ -3,66 +3,21 @@ h1{  /*国名のタイトル*/
 }
 
 h2{ 
-    font-size: 20px;
+    font-size: 20%;
 }
-
-h3{
-    font-size: 20px;
-}
-
-.field{
-    height: auto;
-    width: 600px;
-    position: relative; /*absoluteの原点(基準)になる*/
-}
-
-.field_img{
-    display: block;
-}
-
-.goal{
-    width: 500px;
-    position: relative;
-}
-
-.goal_img{
-    display: block;
-    width: 100%;
-}
-
-.marker {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%); /* 中心基準にする */
-}
-
-.ball {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: black;
-    border-radius: 50%;
-    display: none;
-}
-
-
-
-
 
 /*ヘッダー*/
 .country_header{
     display: flex; /*要素を横並びに(国名と国画像)*/
     align-items: center; /*縦方向を中央揃え(画像の縦方向を収縮)*/
-    gap: 18px; /*要素間の間隔*/
+    gap: 5%; /*要素間の間隔*/
     position: fixed;
 
     top: 0;
     left: 0;
 
     width: 100%;
-    padding: 30px 22px;
+    padding: 2.7% 2.7%;
 
     background: navy;
 
@@ -74,7 +29,7 @@ h3{
 .country_header h1{ /*ヘッダー内のタイトルの見た目調整*/
     margin: 0; /*デフォルト余白を消す*/
     color: white;
-    font-size: 32px; /*文字サイズ*/
+    font-size: 300%; /*文字サイズ*/
     font-weight: 700; /*太字*/
     letter-spacing: 2px; /*文字間を広げる*/
 }
