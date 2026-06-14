@@ -19,6 +19,9 @@
             <button class="tab-button" onclick="showMain('schedule')">
                 試合スケジュール
             </button>
+             <button class="tab-button" onclick="showMain('result')">
+                結果
+            </button>
             
         
         </div>
@@ -254,7 +257,7 @@
             <div class="top-match">
                 <span class="time">6月12日 11:00</span>
                 <span class="teams">
-                    vs<img src="image/south-korea.png" class="flag"><a href="korea.html">韓国</a>
+                   1-2 vs<img src="image/south-korea.png" class="flag"><a href="korea.html">韓国</a>
                 </span>
             </div>
 
@@ -269,47 +272,74 @@
                      vs  <img src="image/mexico.png" class="flag"><a href="mexico.html">メキシコ</a></span>
             </div>
     </div>
-    <div class="content" id="target">
-        <div class="top-box-player">
-            <img src="player/brazil/thiago.png" class="top-player">
-            <div class="info-player">
-                <h1>イゴール・チアゴ</h1>
-                <h2>25-26 プレミアリーグ 得点ランキング2位</h2>
-                <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン</h2>
-                <h2>25-26 プレミアリーグ POTSノミネート</h2>
+     <div class="content" id="result">
+        <div class="result-tytle">
+            <h1>VS韓国</h1>
+        </div>
+        <div class="formation">
+            <img src="image/soccer coat.jpg" class="field">
+
+            <div class="player GK">
+                <div class="number">  1</div>
+                <div class="name">コヴァーシュ</div>
             </div>
-        </div>  
-        <div class="box-player">
-            <img src="player/brazil/raphinha.png" class="player">
-            <div class="info-player">
-                <h1>ラフィーニャ</h1>
-                <h2>24-25 CL 得点王</h2>
-                <h2>24-25 CL アシスト王</h2>
+            <div class="player CB-5-3">
+                <div class="number">  4</div>
+                <div class="name">フラナーチ</div>
             </div>
-        </div>        
-        <div class="box-player">
-            <img src="player/brazil/gabriel.png" class="player">
-            <div class="info-player">
-                <h1>ガブリエル</h1>
-                <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン</h2>
-                <h2>25-26 プレミアリーグ POTSノミネート</h2>
-                <h2>24-25 PFAベストイレブン</h2>
+            <div class="player CB-4-1">
+                <div class="number">  7</div>
+                <div class="name">クレイチー</div>
             </div>
-        </div>   
-        <div class="box-player">
-            <img src="player/brazil/allison.png" class="player">
-            <div class="info-player">
-                <h1>アリソン</h1>
-                <h2>24-25 プレミアリーグ公式ファン投票ベストイレブン</h2>
+            <div class="player CB-4-2">
+                <div class="number">  6</div>
+                <div class="name">チャロウペク</div>
             </div>
-        </div> 
-        <div class="box-player">
-            <img src="player/brazil/marquinhos.png" class="player">
-            <div class="info-player">
-                <h1>マルキーニョス</h1>
-                <h2>24-25 リーグアン ベストイレブン</h2>
+            <div class="player LWB">
+                <div class="number">  20</div>
+                <div class="name">ゼレニー</div>
             </div>
-        </div>     
+             <div class="player RWB">
+                <div class="number">  5</div>
+                <div class="name">ツォウフォル</div>
+            </div>
+            <div class="player DMF-2-1">
+                <div class="number">  24</div>
+                <div class="name">ソイカ</div>
+            </div>
+            <div class="player DMF-2-2">
+                <div class="number">  22</div>
+                <div class="name">ソウチェク</div>
+            </div>
+             <div class="player ST-2-1">
+                <div class="number">  15</div>
+                <div class="name">シュルツ</div>
+            </div>
+             <div class="player ST-2-2">
+                <div class="number">  17</div>
+                <div class="name">プロヴォド</div>
+            </div>
+            <div class="player CF">
+                <div class="number">  10</div>
+                <div class="name">シック</div>
+            </div>
+        </div>
+        <div class="score-tytle">
+            <h1>交代</h1>
+        </div>
+        <div class="score-card">
+            <h3>63分 シュルツ→(9)フロジェク</h3>
+            <h3>63分 シック→(18)サディーレク</h3>
+            <h3>63分 プロヴォド→(19)ホリー</h3>
+            <h3>84分 ソイカ→(13)ヒティル</h3>
+        </div>
+        <div class="score-tytle">
+            <h1>得点</h1>
+        </div>
+         <div class="score-card">
+             <h3>59分 クレイチー</h3>
+         </div>
+
     </div>
     <script>
          function showMain(id){
