@@ -20,6 +20,7 @@ h3 {
 
     top: 0;
     left: 0;
+    height: 120px;   /* 固定 */
 
     width: 100%;
     padding: 2.7% 2.7%;
@@ -57,7 +58,7 @@ h3 {
 }
 
 body{
-    padding-top: 220px;
+    padding-top: 240px;
     left: 0;    
 }
 
@@ -104,10 +105,9 @@ body{
 
 .main-button-area{
     display: flex;
-
     position: fixed;
 
-    top: 120px;
+    top: 170px;
     left: 0;
 
     width: 100%;
@@ -207,8 +207,8 @@ body{
 
 .formation{
     position: relative;
-    width: 800px;
-    margin-left: 90px;
+    width: 720px;
+    margin-left: 20px;
 }
 
 .field {
