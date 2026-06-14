@@ -275,6 +275,16 @@ body{
     left: 45%;
     transform: translateX(-50%);
 }
+.DMF-2-1 {
+    bottom: 40%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.DMF-2-2 {
+    bottom: 40%;
+    left: 55%;
+    transform: translateX(-50%);
+}
 
 .CMF-3-1 {
     bottom: 50%;
@@ -293,6 +303,20 @@ body{
     left: 65%;
     transform: translateX(-50%); 
 }
+
+.LWB {
+    bottom: 50%;
+    left: 80%;
+    transform: translateX(-50%); 
+}
+
+.RWB {
+    bottom: 50%;
+    left: 10%;
+    transform: translateX(-50%); 
+}
+
+
 .AMF-2-1 {
     bottom: 55%;
     left: 30%;
@@ -313,19 +337,29 @@ body{
     left: 10%;
     transform: translateX(-50%);
 }
-.ST-1{
+.ST-2-1 {
+    bottom: 65%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.ST-2-2 {
+    bottom: 65%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.CF{
     bottom: 80%;
     left: 45%;
     transform: translateX(-50%);
 }
 
-.ST-2-1 {
+.CF-2-1 {
     bottom: 80%;
     left: 35%;
     transform: translateX(-50%); 
 }
 
-.ST-2-2 {
+.CF-2-2 {
     bottom: 80%;
     left: 50%;
     transform: translateX(-50%); 
