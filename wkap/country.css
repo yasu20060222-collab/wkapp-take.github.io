@@ -338,29 +338,29 @@ body{
     transform: translateX(-50%);
 }
 .ST-2-1 {
-    bottom: 75%;
+    bottom: 65%;
     left: 40%;
     transform: translateX(-50%);
 }
 .ST-2-2 {
-    bottom: 75%;
+    bottom: 65%;
     left: 60%;
     transform: translateX(-50%);
 }
 .CF{
-    bottom: 75%;
+    bottom: 80%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .CF-2-1 {
-    bottom: 85%;
+    bottom: 80%;
     left: 40%;
     transform: translateX(-50%); 
 }
 
 .CF-2-2 {
-    bottom: 85%;
+    bottom: 80%;
     left: 60%;
     transform: translateX(-50%); 
 }
