@@ -348,19 +348,19 @@ body{
     transform: translateX(-50%);
 }
 .CF{
-    bottom: 80%;
+    bottom: 750%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .CF-2-1 {
-    bottom: 80%;
+    bottom: 75%;
     left: 40%;
     transform: translateX(-50%); 
 }
 
 .CF-2-2 {
-    bottom: 80%;
+    bottom: 75%;
     left: 60%;
     transform: translateX(-50%); 
 }
