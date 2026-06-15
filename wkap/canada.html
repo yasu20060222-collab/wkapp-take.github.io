@@ -19,6 +19,9 @@
             <button class="tab-button" onclick="showMain('schedule')">
                 試合スケジュール
             </button>
+            <button class="tab-button" onclick="showMain('result')">
+                結果
+            </button>
            
         </div>
          <div class="content active" id="member">
@@ -275,7 +278,7 @@
             <div class="top-match">
                 <span class="time">6月13日 4:00</span>
                 <span class="teams">
-                    vs<img src="image/bosnia-and-herzegovina.png" class="flag"><a href="bosnia.html">ボスニア・ヘルツェゴビナ</a>
+                   1-1 vs<img src="image/bosnia-and-herzegovina.png" class="flag"><a href="bosnia.html">ボスニア・ヘルツェゴビナ</a>
                 </span>
             </div>
 
@@ -290,31 +293,82 @@
                      vs  <img src="image/switzerland.png" class="flag"><a href="switzerland.html">スイス</a></span>
             </div>
     </div>
-    <div class="content" id="target">
-        <div class="top-box-player">
-            <img src="player/group B/david.jpg" class="top-player">
-            <div class="info-player">
-                <h1>ジョナサン・デイヴィッド</h1>
-                <h2>25-26 カナダ代表最多得点者</h2>
-            </div>
-        </div>  
-        <div class="box-player">
-            <img src="player/group B/kone.jpg" class="player">
-            <div class="info-player">
-                <h1>イスマエル・コネ</h1>
-                <h2>カナダの中盤を支える若手選手。</h2>
-                <h2>足元の技術が高く、運べる選手でもある。</h2>
-            </div>
-        </div> 
-        <div class="box-player">
-            <img src="player/group B/davis.jpg" class="player">
-            <div class="info-player">
-                <h1>アルフォンソ・デイヴィス</h1>
-                <h2>バイエルン所属。</h2>
-                <h2>スピードと推進力で攻撃にも参加。</h2>
+     <div class="content" id="result">
+        <div class="result-tytle">
+            <h1>VSボスニア</h1>
+        </div>
+        <div class="formation">
+            <img src="image/soccer coat.jpg" class="field">
 
+            <div class="player GK">
+                <div class="number">  16</div>
+                <div class="name">クレポー</div>
             </div>
-        </div> 
+            <div class="player LB-4">
+                <div class="number">  22</div>
+                <div class="name">ラリア</div>
+            </div>
+            <div class="player CB-4-1">
+                <div class="number">  13</div>
+                <div class="name">コーネリアス</div>
+            </div>
+            <div class="player CB-4-2">
+                <div class="number">  4</div>
+                <div class="name">ジョーンズ</div>
+            </div>
+            <div class="player RB-4">
+                <div class="number">  2</div>
+                <div class="name">ジョンストン</div>
+            </div>
+            <div class="player LM">
+                <div class="number">  11</div>
+                <div class="name">ミラー</div>
+            </div>
+             <div class="player CMF-2-1">
+                <div class="number">  7</div>
+                <div class="name">エウスタキオ</div>
+            </div>
+             <div class="player CMF-2-2">
+                <div class="number">  8</div>
+                <div class="name">コネ</div>
+            </div>
+             <div class="player RM">
+                <div class="number">  17</div>
+                <div class="name">ブキャナン</div>
+            </div>
+            <div class="player CF-2-2">
+                <div class="number">  10</div>
+                <div class="name">デイビッド</div>
+            </div>
+            <div class="player CF-2-1">
+                <div class="number">  12</div>
+                <div class="name">オルワセイ</div>
+            </div>
+        </div>
+        <div class="score-tytle">
+            <h1>交代</h1>
+        </div>
+        <div class="score-card">
+            <h3>61分 ミラー→(14)シャッフェルバーグ</h3>
+            <h3>61分 デイビッド→(24)デイビッド</h3>
+            <h3>61分 ブチャナン→(20)アーメド</h3>
+            <h3>76分 オルワセイ→(9)ラリン</h3>
+            <h3>90分 エウスタキオ→(21)オソリオ</h3>
+        </div>
+         <div class="score-tytle">
+            <h1>得点</h1>
+        </div>
+        <div class="score-card">
+            <h3>78分 ラリン</h3>
+
+        </div>
+        <div class="score-tytle">
+            <h1>POM</h1>
+        </div>
+        <div class="score-card">
+            <h3>イスマエル・コネ</h3>
+
+        </div>
     </div>
         <script>
          function showMain(id){
