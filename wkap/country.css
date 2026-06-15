@@ -304,6 +304,17 @@ body{
     transform: translateX(-50%); 
 }
 
+.CMF-2-1 {
+    bottom: 50%;
+    left: 40%;
+    transform: translateX(-50%); 
+}
+.CMF-2-2 {
+    bottom: 50%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
 .RWB {
     bottom: 50%;
     left: 80%;
@@ -313,6 +324,18 @@ body{
 .LWB {
     bottom: 50%;
     left: 20%;
+    transform: translateX(-50%); 
+}
+
+.LM {
+    bottom: 55%;
+    left: 20%;
+    transform: translateX(-50%); 
+}
+
+.RM {
+    bottom: 55%;
+    left: 80%;
     transform: translateX(-50%); 
 }
 
@@ -329,7 +352,7 @@ body{
 }
 .RW {
     bottom: 70%;
-    left: 80%;
+    left: 85%;
     transform: translateX(-50%);
 }
 .LW {
