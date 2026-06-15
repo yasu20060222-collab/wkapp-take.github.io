@@ -19,6 +19,9 @@
             <button class="tab-button" onclick="showMain('schedule')">
                 試合スケジュール
             </button>
+            <button class="tab-button" onclick="showMain('result')">
+                結果
+            </button>
            
         </div>
          <div class="content active" id="member">
@@ -275,7 +278,7 @@
             <div class="top-match">
                 <span class="time">6月13日 10:00</span>
                 <span class="teams">
-                    vs<img src="image/paraguay.png" class="flag"><a href="paraguay.html">パラグアイ</a>
+                   4-1 vs<img src="image/paraguay.png" class="flag"><a href="paraguay.html">パラグアイ</a>
                 </span>
             </div>
 
@@ -291,32 +294,86 @@
             </div>
             
     </div>
-    <div class="content" id="target">
-        <div class="top-box-player">
-            <img src="player/group D/pulisic.jpg" class="top-player">
-            <div class="info-player">
-                <h1>クリスチャン・プリシッチ</h1>
-                <h2>アメリカのエース。</h2>
-                <h2>決定力とテクニックを兼ね備えている。</h2>
+     <div class="content" id="result">
+        <div class="result-tytle">
+            <h1>VSパラグアイ</h1>
+        </div>
+        <div class="formation">
+            <img src="image/soccer coat.jpg" class="field">
+
+            <div class="player GK">
+                <div class="number">  24</div>
+                <div class="name">フリーズ</div>
             </div>
-        </div>  
-        <div class="box-player">
-            <img src="player/group D/tilman.jpg" class="player">
-            <div class="info-player">
-                <h1>マリク・ティルマン</h1>
-                <h2>24-25 CL 得点王</h2>
+            <div class="player LB-4">
+                <div class="number">  5</div>
+                <div class="name">ロビンソン</div>
             </div>
-        </div>        
-        <div class="box-player">
-            <img src="player/brazil/gabriel.png" class="player">
-            <div class="info-player">
-                <h1>ガブリエル</h1>
-                <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン</h2>
-                <h2>25-26 プレミアリーグ POTSノミネート</h2>
-                <h2>24-25 PFAベストイレブン</h2>
+            <div class="player CB-4-1">
+                <div class="number">  13</div>
+                <div class="name">リーム</div>
             </div>
-        </div>   
+            <div class="player CB-4-2">
+                <div class="number">  3</div>
+                <div class="name">リチャーズ</div>
+            </div>
+            <div class="player RB-4">
+                <div class="number">  16</div>
+                <div class="name">フリーマン</div>
+            </div>
+             <div class="player DMF-1">
+                <div class="number">  4</div>
+                <div class="name">アダムズ</div>
+            </div>
+             <div class="player AMF-2-1">
+                <div class="number">  17</div>
+                <div class="name">ティルマン</div>
+            </div>
+             <div class="player AMF-2-2">
+                <div class="number">  8</div>
+                <div class="name">マッケニー</div>
+            </div>
+            <div class="player RW">
+                <div class="number">  2</div>
+                <div class="name">デスト</div>
+            </div>
+            <div class="player LW">
+                <div class="number">  10</div>
+                <div class="name">プリシッチ</div>
+            </div>
+            <div class="player CF">
+                <div class="number">  20</div>
+                <div class="name">バログン</div>
+            </div>
+        </div>
+        <div class="score-tytle">
+            <h1>交代</h1>
+        </div>
+        <div class="score-card">
+            <h3>46分 プリシッチ→(14)バーハルター</h3>
+            <h3>72分 デスト→(21)ウェア</h3>
+            <h3>72分 バログン→(9)ペピ</h3>
+            <h3>82分 ティルマン→(7)レイナ</h3>
+        </div>
+        <div class="score-tytle">
+            <h1>得点</h1>
+        </div>
+         <div class="score-card">
+             <h3>7分 オウンゴール</h3>
+            <h3>31分 バログン</h3>
+            <h3>45+5分 バログン</h3>
+            <h3>98分 レイナ</h3>
+         </div>
+        <div class="score-tytle">
+            <h1>POM</h1>
+        </div>
+        <div class="score-card">
+            <h3>フォラリン・バログン</h3>
+        </div>
+
+
     </div>
+      
     <script>
          function showMain(id){
                 const contents = document.querySelectorAll(".content");
