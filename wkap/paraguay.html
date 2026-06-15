@@ -19,6 +19,9 @@
             <button class="tab-button" onclick="showMain('schedule')">
                 試合スケジュール
             </button>
+             <button class="tab-button" onclick="showMain('result')">
+                結果
+            </button>
           
         </div>
          <div class="content active" id="member">
@@ -275,7 +278,7 @@
              <div class="top-match">
                 <span class="time">6月13日 10:00</span>
                 <span class="teams">
-                    vs<img src="image/america.png" class="flag"><a href="america.html">アメリカ</a>
+                    1-4vs<img src="image/america.png" class="flag"><a href="america.html">アメリカ</a>
                 </span>
             </div>
 
@@ -291,47 +294,75 @@
             </div>
             
     </div>
-    <div class="content" id="target">
-        <div class="top-box-player">
-            <img src="player/brazil/thiago.png" class="top-player">
-            <div class="info-player">
-                <h1>イゴール・チアゴ</h1>
-                <h2>25-26 プレミアリーグ 得点ランキング2位</h2>
-                <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン</h2>
-                <h2>25-26 プレミアリーグ POTSノミネート</h2>
+      <div class="content" id="result">
+        <div class="result-tytle">
+            <h1>VSアメリカ</h1>
+        </div>
+        <div class="formation">
+            <img src="image/soccer coat.jpg" class="field">
+
+            <div class="player GK">
+                <div class="number">  12</div>
+                <div class="name">ヒル</div>
             </div>
-        </div>  
-        <div class="box-player">
-            <img src="player/brazil/raphinha.png" class="player">
-            <div class="info-player">
-                <h1>ラフィーニャ</h1>
-                <h2>24-25 CL 得点王</h2>
-                <h2>24-25 CL アシスト王</h2>
+            <div class="player LB-4">
+                <div class="number">  6</div>
+                <div class="name">アロンソ</div>
             </div>
-        </div>        
-        <div class="box-player">
-            <img src="player/brazil/gabriel.png" class="player">
-            <div class="info-player">
-                <h1>ガブリエル</h1>
-                <h2>25-26 プレミアリーグ公式ファン投票ベストイレブン</h2>
-                <h2>25-26 プレミアリーグ POTSノミネート</h2>
-                <h2>24-25 PFAベストイレブン</h2>
+            <div class="player CB-4-1">
+                <div class="number">  3</div>
+                <div class="name">アルデレテ</div>
             </div>
-        </div>   
-        <div class="box-player">
-            <img src="player/brazil/allison.png" class="player">
-            <div class="info-player">
-                <h1>アリソン</h1>
-                <h2>24-25 プレミアリーグ公式ファン投票ベストイレブン</h2>
+            <div class="player CB-4-2">
+                <div class="number">  15</div>
+                <div class="name">ゴメス</div>
             </div>
-        </div> 
-        <div class="box-player">
-            <img src="player/brazil/marquinhos.png" class="player">
-            <div class="info-player">
-                <h1>マルキーニョス</h1>
-                <h2>24-25 リーグアン ベストイレブン</h2>
+            <div class="player RB-4">
+                <div class="number">  4</div>
+                <div class="name">カセレス</div>
             </div>
-        </div>     
+            <div class="player LM">
+                <div class="number">  10</div>
+                <div class="name">アルミロン</div>
+            </div>
+             <div class="player CMF-2-1">
+                <div class="number">  16</div>
+                <div class="name">ボバディージャ</div>
+            </div>
+             <div class="player CMF-2-2">
+                <div class="number">  14</div>
+                <div class="name">クバス</div>
+            </div>
+             <div class="player RM">
+                <div class="number">  8</div>
+                <div class="name">ゴメス</div>
+            </div>
+            <div class="player CF-2-2">
+                <div class="number">  19</div>
+                <div class="name">エンシソ</div>
+            </div>
+            <div class="player CF-2-1">
+                <div class="number">  9</div>
+                <div class="name">サナブリア</div>
+            </div>
+        </div>
+        <div class="score-tytle">
+            <h1>交代</h1>
+        </div>
+        <div class="score-card">
+            <h3>46分 ボバディージャ→(11)マウリシオ</h3>
+            <h3>62分 サナブリア→(18)アルセ</h3>
+            <h3>79分 カセレス→(2)ベラスケス</h3>
+            <h3>79分 ゴメス→(17)ロメロ</h3>
+            <h3>79分 アルミロン→(7)ソサ</h3>
+        </div>
+         <div class="score-tytle">
+            <h1>得点</h1>
+        </div>
+        <div class="score-card">
+            <h3>73分 マウリシオ</h3>
+
+        </div>
     </div>
     <script>
          function showMain(id){
