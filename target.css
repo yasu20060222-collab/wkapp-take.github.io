@@ -1,0 +1,97 @@
+.header{
+    gap: 18px; /*要素間の間隔*/
+    width: 100%;
+    padding: 30px 22px;
+    background-color: navy;
+    z-index: 1000;
+}
+
+.header h1{ /*ヘッダー内のタイトルの見た目調整*/
+    margin: 0; /*デフォルト余白を消す*/
+    color: white;
+    font-size: 32px; /*文字サイズ*/
+    font-weight: 700; /*太字*/
+    letter-spacing: 2px; /*文字間を広げる*/
+}
+
+.top-box-player,
+.box-player{
+    width: 320px;
+    display: block;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.15);
+
+    transition: .3s;
+}
+
+.box-player:hover{
+    transform: translateY(-5px);
+}
+
+
+.top-box-player {
+    margin-top: 100px;
+}
+
+
+.player-header{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+}
+
+.position{
+    background:#1e88e5;
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+}
+
+.group{
+    background:#eeeeee;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+}
+
+.player-name{
+    font-size:24px;
+
+    margin-bottom:10px;
+}
+
+.country{
+    color:#666;
+
+    margin-bottom:15px;
+}
+.achievement{
+    border-left:4px solid #fbc02d;
+
+    padding-left:10px;
+}
+.players{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.position,
+.group,
+.player-name{
+    white-space: nowrap;
+}
